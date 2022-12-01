@@ -1,0 +1,4 @@
+#!/bin/bash
+chown vincent *
+chown USER:GROUP *
+

@@ -1,4 +1,2 @@
 #!/bin/bash
-chown vincent *
-chown USER:GROUP *
-
+chown vincent staff * 

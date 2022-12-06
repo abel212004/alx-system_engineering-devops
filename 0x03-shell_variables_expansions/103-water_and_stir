@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $bestchol=$((( echo $WATER | tr water 01234) + 5#$( echo $STIR | tr stir. 01234 ) ))

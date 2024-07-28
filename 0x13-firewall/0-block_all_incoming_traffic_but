@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# installs and configures ufw on a Linux system.
+apt-get install ufw -y
+sed -i 's/IPV6=.*/IPV6=yes/' /etc/default/ufw
+ufw disable
+echo "y" | ufw enable
+ufw default allow outgoing
+ufw default deny incoming
+ufw allow 22/tcp
+ufw allow 443/tcp
+ufw allow 80/tcp
